@@ -18,6 +18,9 @@ author :
 # Set the timezone
 timezone: Asia/Kolkata
 
+# Set excerpt separator
+excerpt_separator : "<!--more-->"
+
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
@@ -132,3 +135,4 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+

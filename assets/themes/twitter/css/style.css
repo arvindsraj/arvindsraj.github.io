@@ -1,3 +1,13 @@
+/* Body background color added */
+body {
+    background: none repeat scroll 0 0 #EFEFEF;
+    color: #555555;  
+}
+
+.content {
+    margin: 40px 0 20px 20px;
+}
+
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
@@ -27,6 +37,10 @@
 .post-full .date {
   margin-bottom: 20px;
   font-weight: bold; }
+
+/* sidebar */
+.sidebar {
+    margin: 40px 20px 20px 0; }
 
 /* tag_box */
 .tag_box {
@@ -63,3 +77,27 @@
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+.wrapper {
+    background-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 30px;
+}
+
+.widget-wrapper {
+    background-color: #F9F9F9;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px 4px 4px 4px;
+    margin: 0 0 20px;
+    padding: 20px;
+}
+
+.widget-title {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 23px;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: left;
+}

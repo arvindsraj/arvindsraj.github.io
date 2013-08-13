@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hello, World!"
+author: "Arvind"
 description: ""
 category: miscellaneous
 tags: []

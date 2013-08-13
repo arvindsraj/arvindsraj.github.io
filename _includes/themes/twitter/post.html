@@ -5,7 +5,10 @@
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
+        <span>
+            {% if page.author %} <span class="vcard"><span class="fn"> Written by {{ page.author }} on </span></span> {% endif %}
+            <abbr class="published" title="{{ page.date | date: "%a, %d %b %Y %H:%M:%S %z" }}">{{ page.date | date: "%b %d, %Y" }}</abbr>
+        </span>
     </div>
     <div class="content">
       {{ content }}

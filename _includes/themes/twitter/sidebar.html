@@ -32,7 +32,7 @@
   {% else %}
     {% for category in site.categories %}
      <li><a href="{{ BASE_PATH }}/categories.html#{{ category[0] }}-ref">
-     {{ category[0] | join: "/" }}</span>
+         <span>{{ category[0] | join: "/" }}</span>
      </a></li>
     {% endfor %}
   {% endif %}

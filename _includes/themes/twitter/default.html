@@ -40,29 +40,27 @@
         <div class="navbar">
           <div class="navbar-inner">
             <div class="container">
-              <div style="padding:0 0 0 90px">
-              <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-              <ul class="nav">
+              <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+              <ul class="nav navbar-nav navbar-right">
                 {% assign pages_list = site.pages %}
                 {% assign group = 'navigation' %}
                 {% include JB/pages_list %}
               </ul>
-              </div>
+            </div>
           </div>
-          </div>
-      </div>
+        </div>
       
     <div class="container">
-        <div class="span12">
+        <div class="col-md-12">
         <div class="navbar navbar-inverse">
             <div class="navbar-inner">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <a class="btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
     
-                <div class="nav-collapse collapse">
+                <div class="navbar-collapse collapse">
                     <ul class="nav" style="float: left">
                     {% for link in site.navigation %}
                         {% assign current = nil %}
@@ -114,14 +112,14 @@
     </div>
 
     <div class="container">
-        <div class="span12 wrapper">
+        <div class="col-md-12 wrapper">
             <div class="row">
-                <div class="span8">
+                <div class="col-md-8">
                     <div class="content">
                         {{ content }}
                     </div>
                 </div>
-                <div class="span4">
+                <div class="col-md-4">
                     <div class="sidebar">
                         {% include themes/twitter/sidebar.html %}
                     </div>

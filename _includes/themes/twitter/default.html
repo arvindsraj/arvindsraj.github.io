@@ -38,7 +38,6 @@
 
   <body>
         <div class="navbar">
-          <div class="navbar-inner">
             <div class="container">
               <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
               <ul class="nav navbar-nav navbar-right">
@@ -47,21 +46,13 @@
                 {% include JB/pages_list %}
               </ul>
             </div>
-          </div>
         </div>
       
     <div class="container">
         <div class="col-md-12">
-        <div class="navbar navbar-inverse">
-            <div class="navbar-inner">
-                <a class="btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-    
+        <div class="navbar navbar-inverse navbar-static-top">
                 <div class="navbar-collapse collapse">
-                    <ul class="nav" style="float: left">
+                    <ul class="nav navbar-nav" style="float: left">
                     {% for link in site.navigation %}
                         {% assign current = nil %}
                         {% capture fullurl %}{{ link.url }}index.html{% endcapture %}
@@ -103,12 +94,11 @@
                         </a></li>
                     {% endif %}
                 {% endfor %}
-                <li><a href="{{ BASE_PATH }}/rss.xml"><i class="icon-rss" alt="RSS" title="RSS"></i></a></li>
-                <li><a href="{{ BASE_PATH }}/atom.xml"><img src="{{ ASSET_PATH }}/bootstrap/img/wikipedia-atom-feed-icon.png" alt="ATOM" title="ATOM"</i></a></li>
-            </ul>
-            </div>
+                        <li><a href="{{ BASE_PATH }}/rss.xml"><i class="icon-rss" alt="RSS" title="RSS"></i></a></li>
+                        <li><a href="{{ BASE_PATH }}/atom.xml"><img src="{{ASSET_PATH }}/bootstrap/img/wikipedia-atom.png" alt="ATOM" title="ATOM"</i></a></li>
+                    </ul>
+                </div>
         </div>
-    </div>
     </div>
 
     <div class="container">

@@ -27,7 +27,16 @@ navigation:
   url: /
   icon: icon-home
 - text: About
-  url: /about.html
+  url: #
+  children:
+  - text: Bio
+    url: /about.html
+  - text: Github
+    url: https://github.com/arvindsraj
+  - text: Twitter
+    url: https://twitter.com/arvindsraj
+  - text: Old blog
+    url: http://arvindsraj.wordpress.com
 
 paginate: 10
 

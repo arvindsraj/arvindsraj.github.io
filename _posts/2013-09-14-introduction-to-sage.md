@@ -2,7 +2,6 @@
 layout: post
 title: "Introduction to Sage"
 description: "An introductory series on Sage mathematics software"
-author: "Arvind"
 category: sage
 tags: [python, sage, mathematics, computer algebra system]
 ---

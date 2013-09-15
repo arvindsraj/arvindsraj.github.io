@@ -6,7 +6,11 @@
   <div class="col-md-12">
     <div class="date">
         <span>
-            {% if page.author %} <span class="vcard"><span class="fn"> Written by {{ page.author }} on </span></span> {% endif %}
+            {% if page.author %} 
+                <span class="vcard"><span class="fn"> Written by {{ page.author }} on </span></span> 
+            {% elsif site.author.shortname %}
+                <span class="vcard"><span class="fn"> Written by {{ site.author.shortname }} on </span></span>
+            {% endif %}
             <abbr class="published" title="{{ page.date | date: "%a, %d %b %Y %H:%M:%S %z" }}">{{ page.date | date: "%b %d, %Y" }}</abbr>
         </span>
     </div>

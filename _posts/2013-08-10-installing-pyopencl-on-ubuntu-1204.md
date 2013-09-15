@@ -2,7 +2,6 @@
 layout: post
 title: "Installing pyopencl on Ubuntu 12.04"
 description: "A simple how-to for installing pyopencl on Ubuntu 12.04"
-author: "Arvind"
 category: pyopencl
 tags: [python, pyopencl, ubuntu]
 ---

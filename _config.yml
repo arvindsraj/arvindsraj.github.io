@@ -33,9 +33,11 @@ navigation:
     url: /about.html
   - text: Github
     url: https://github.com/arvindsraj
+  - text: Bitbucket
+    url: https://bitbucket.org/arvindsraj
   - text: Twitter
     url: https://twitter.com/arvindsraj
-  - text: Old blog
+  - text: Wordpress blog
     url: http://arvindsraj.wordpress.com
 
 paginate: 10

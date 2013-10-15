@@ -1,0 +1,72 @@
+<!-- NAVBAR
+================================================== -->
+<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+<div class="container">
+    <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+    <ul class="nav navbar-nav" style="float: left">
+        {% for link in site.navigation %}
+        {% assign current = nil %}
+        {% capture fullurl %}{{ link.url }}index.html{% endcapture %}
+        {% if page.url == fullurl or page.url == link.url %}
+        {% assign current = 'active' %}
+        {% endif %}
+
+        {% if link.external %}
+        {% assign link_url = link.url %}
+        {% else %}
+        {% capture link_url %}{{ BASE_PATH }}{{ link.url }}{% endcapture %}
+        {% endif %}
+
+        {% if link.children %}
+        <li class="dropdown {{ current }}">
+        <a href="{{ link_url }}" class="dropdown-toggle" data-toggle="dropdown">{{ link.text }} <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            {% for childlink in link.children %}
+            {% if childlink.external %}
+            {% assign childlink_url = childlink.url %}
+            {% else %}
+            {% capture childlink_url %}{{ BASE_PATH }}{{ childlink.url }}{% endcapture %}
+            {% endif %}
+            <li><a href="{{ childlink_url }}">
+                {% if childlink.icon %}
+                <i class="{{ childlink.icon }}" alt="{{ childlink.text }}" title="{{ childlink.text }}"></i>
+                {% endif %}
+                {{ childlink.text }}
+            </a></li>
+            {% endfor %}
+        </ul>
+        </li>
+        {% else %}
+        <li class="{{ current }}"><a href="{{ link_url }}">
+            {% if link.icon %}
+            <i class="{{ link.icon }}" alt="{{ link.text }}" title="{{ link.text }}"></i>
+            {% endif %}
+            {{ link.text }}
+        </a></li>
+        {% endif %}
+        {% endfor %}
+        <li><a href="{{ BASE_PATH }}/rss.xml"><i class="icon-rss" alt="RSS" title="RSS"></i></a></li>
+        <li><a href="{{ BASE_PATH }}/atom.xml"><img src="{{ASSET_PATH }}/bootstrap/img/wikipedia-atom.png" alt="ATOM" title="ATOM"</i></a></li>
+</ul>
+<ul class="nav navbar-nav">
+    {% assign pages_list = site.pages %}
+    {% assign group = 'navigation' %}
+    {% include JB/pages_list %}
+</ul>
+</nav> <!-- navbar-collapse -->
+        </div> <!-- container -->
+        </header> <!-- navbar navbar-inverse --> 
+    </div> <!-- container -->
+</div><!-- navbar-wrapper -->
+
+<!-- END NAVBAR 
+=========================== -->

@@ -2,7 +2,7 @@
 layout: post
 title: "[GSoC 2014] Weekly update(for weeks #1 and #2)"
 description: "Google Summer of Code 2014: Haiku ARM port week #1 #2"
-category: gsoc2014, haiku
+category: haiku
 tags: [gsoc2014, haiku, arm port]
 ---
 {% include JB/setup %}

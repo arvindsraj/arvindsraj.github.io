@@ -150,7 +150,6 @@ FPSCR: 00000000
 {% endhighlight %}
 
 ### Next steps
-The next steps are
 - Fix the out of bounds code execution at 0xe59f300c(which might take a while).
 - Fix the build system so that it can automatically generate the SD card image.
 

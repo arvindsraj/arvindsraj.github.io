@@ -71,9 +71,10 @@ hardware information is added. Implementing FDT support will eliminate the need 
 easily discovered. FDT support is work in progress and thus the current status has to be evaluated in order to decide if it
 will fit within the timeframe.
 
-Patches to buildtools and haiku source to allow building ARM port from within Haiku. Currently, cross compiling the toolchain
-from within Haiku fails since gcc2 is default and few utilities are not yet available for other build platforms. The goals is
-to contribute patches and create packages that would enable compilation of Haiku ARM port from within Haiku.
+### Patches to buildtools and haiku source to allow building ARM port from within Haiku.
+Currently, cross compiling the toolchain from within Haiku fails since gcc2 is default and few utilities are not yet available
+for other build platforms. The goals is to contribute patches and create packages that would enable compilation of Haiku ARM
+port from within Haiku.
 
 ### Comments and suggestions welcome!
 I’ve read through few past blog posts and have found that lot of people are really interested in having a working ARM port for

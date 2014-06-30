@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[GSoC 2014] Week #7 update"
-description: "Google Summer of Code 2014: Haiku ARM port week #5"
+description: "Google Summer of Code 2014: Haiku ARM port week #7"
 category: haiku
 tags: [gsoc2014, haiku, arm port]
 ---

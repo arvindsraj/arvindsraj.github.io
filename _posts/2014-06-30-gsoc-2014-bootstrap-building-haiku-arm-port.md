@@ -41,7 +41,7 @@ $ sudo apt-get install u-boot-tools util-linux mtools device-tree-compiler
 In order to build Haiku, grab all of the following source trees.
 
 {% highlight bash %}
-$ git clone https://bitbucket.org/haikuports/haikuportergit
+$ git clone https://bitbucket.org/haikuports/haikuporter.git
 $ git clone https://bitbucket.org/haikuports/haikuports.git
 $ git clone https://bitbucket.org/haikuports/haikuports.cross.git
 $ git clone https://git.haiku-os.org/buildtools
@@ -93,7 +93,7 @@ $ make
 $ sudo make install
 {% endhighlight %}
 
-If you supply --prefix directory option to configure script, you can leave out sudo depending on whether current user
+If you supply \-\-prefix directory option to configure script, you can leave out sudo depending on whether current user
 can write to the specified directory.
 
 ### Running Haiku MMC in qemu

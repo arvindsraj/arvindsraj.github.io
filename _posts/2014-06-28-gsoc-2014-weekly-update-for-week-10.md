@@ -10,7 +10,7 @@ tags: [gsoc2014, haiku, arm port]
 Hey everyone!
 Here’s the update for week #10.
 
-TL;DR - MMU is enabled and now working! I think this is good progress. Next is probably adding SD card driver support.
+TL;DR - MMU is enabled and now working! I think this is good progress.
 
 <!--more-->
 

@@ -35,13 +35,11 @@ navigation:
   - text: Bio
     url: /about.html
   - text: Github
-    url: https://github.com/arvindsraj
+    url: https://github.com/dnivra
   - text: Bitbucket
-    url: https://bitbucket.org/arvindsraj
+    url: https://bitbucket.org/dnivra
   - text: Twitter
-    url: https://twitter.com/arvindsraj
-  - text: Wordpress blog
-    url: http://arvindsraj.wordpress.com
+    url: https://twitter.com/dnivra_
 
 paginate: 10
 

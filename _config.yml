@@ -11,13 +11,13 @@ markdown: kramdown
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Arvind's technical blog
-tagline: A notebook of my technical exploits
+title : dnivra's technical blog
+tagline: <Insert random tagline here>
 author :
-  name : Arvind S Raj
-  github : arvindsraj
-  twitter : arvindsraj
-  shortname: Arvind
+  name : dnivra
+  github : dnivra
+  twitter : dnivra_
+  shortname: dnivra
 
 # Set the timezone
 timezone: Asia/Kolkata
